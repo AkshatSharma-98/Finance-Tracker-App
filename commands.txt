@@ -1,0 +1,15 @@
+frontend : 
+    npx create-react-app my-app --template typescript
+    npm install @clerk/clerk-react
+    npm i react-router-dom
+
+
+backend :
+    npm init -y
+    npm i dotenv
+    mpn i cors
+    npm i -D @types/cors
+    npm i express @types/express
+    npm i mongoose @types/mongoose
+    npm i -D nodemon
+    npm i ts-node typescript
