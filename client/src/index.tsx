@@ -11,9 +11,9 @@ if (!PUBLISHABLE_KEY) {
   throw new Error('Missing Publishable key!');
 }
 
-const key = (process.env.NODE_ENV === 'production') ?
-  PUBLISHABLE_KEY.replace('_test', '_live') :
-  PUBLISHABLE_KEY;
+// const key = (process.env.NODE_ENV === 'production') ?
+//   PUBLISHABLE_KEY.replace('_test', '_live') :
+//   PUBLISHABLE_KEY;
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -21,7 +21,7 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <ClerkProvider
-    publishableKey={key}
+    publishableKey={PUBLISHABLE_KEY}
     afterSignOutUrl='/auth'
   >
     <App />
